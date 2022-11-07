@@ -16,7 +16,7 @@ void swap(int *a, int *b)
 }
 
 /**
- * pivot - Get the pivot of the array
+ * partition - Get the partition of the array
  * @array: The unsorted array.
  * @size: The length of the array
  * @low: The left side of the pivot
@@ -42,7 +42,7 @@ int partition(int *array, size_t size, int low, int high)
 	}
 	if (array[j] > *pivot)
 	{
-		swap(array +j, pivot);
+		swap(array + j, pivot);
 		print_array(array, size);
 	}
 	return (j);
@@ -75,7 +75,7 @@ void Lomuto(int *array, size_t size, int low, int high)
  */
 void quick_sort(int *array, size_t size)
 {
-	if (0 >= size)
+	if (size <= 0)
 		return;
 
 	Lomuto(array, size, 0, size - 1);

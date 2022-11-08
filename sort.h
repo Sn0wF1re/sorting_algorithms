@@ -31,4 +31,7 @@ void swap(int *a, int *b);
 void shell_sort(int *array, size_t size);
 void swapping(listint_t **head, listint_t *node);
 void cocktail_sort_list(listint_t **list);
+void siftDown(int *array, size_t size, int start, int end);
+void heapify(int *array, size_t size, int count);
+void heap_sort(int *array, size_t size);
 #endif /*SORT_H*/

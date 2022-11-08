@@ -2,9 +2,8 @@
 
 /**
  * swapping - swaps two nodes
- * @head: head of the listint_t list
- * @node1: first node to sort
- * @node2: second node to sort
+ * @list: listint_t list
+ * @node: node to be swapped
  */
 void swapping(listint_t **list, listint_t *node)
 {
@@ -32,7 +31,7 @@ void cocktail_sort_list(listint_t **list)
 	int swapped = 1;
 	listint_t *node = *list;
 
-	if (*list == NULL || list == NULL)
+	if (*list == NULL || list == NULL || (*list)->next == NULL)
 	{
 		return;
 	}

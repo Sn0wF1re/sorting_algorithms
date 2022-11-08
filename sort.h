@@ -29,4 +29,6 @@ void Lomuto(int *array, size_t size, int low, int high);
 int partition(int *array, size_t size, int low, int high);
 void swap(int *a, int *b);
 void shell_sort(int *array, size_t size);
+void swapping(listint_t **head, listint_t *node);
+void cocktail_sort_list(listint_t **list);
 #endif /*SORT_H*/
